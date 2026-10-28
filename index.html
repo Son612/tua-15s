@@ -18,13 +18,15 @@
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html, body { margin: 0; background: var(--bg); color: var(--text); }
   body { font: 17px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column;
     padding: calc(env(safe-area-inset-top, 0px) + 54px) 0 calc(24px + env(safe-area-inset-bottom)); }
   /* Vừa viền iPhone: thanh tiêu đề GHIM CỐ ĐỊNH ở mép trên (Safari 26 chỉ thôi làm mờ khi thấy thanh cố định ở mép), nền kín phủ cả vùng giờ/pin.
      Cao = vùng giờ/pin + 54px (12 + 29 dòng chữ + 12 + viền 1) → body chừa đúng chừng đó */
   header { position: fixed; top: 0; left: 0; right: 0; z-index: 5; background: var(--bg); padding: calc(env(safe-area-inset-top, 0px) + 12px) max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left)); border-bottom: 1px solid var(--line); }
   body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 30; pointer-events: none; }
   header h1 { margin: 0; font-size: 20px; line-height: 29px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  main { max-width: 560px; margin: 0 auto; padding: 16px; display: grid; gap: 14px; }
+  /* Căn giữa phần nội dung trong vùng còn lại dưới tiêu đề; nội dung dài vẫn cuộn được. */
+  main { width: 100%; max-width: 560px; margin: auto; padding: 16px; display: grid; gap: 14px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: grid; gap: 12px; }
   .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 54px; padding: 12px 16px;
     border: 0; border-radius: 14px; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
