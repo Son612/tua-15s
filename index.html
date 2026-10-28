@@ -56,7 +56,6 @@
 <main>
   <label class="btn main" for="file">🎬 Chọn video</label>
   <input id="file" type="file" accept="video/*,.mov,.mp4,.m4v">
-  <div class="muted" id="hint">Chọn video quay bằng iPhone. App tua nhanh cả video cho vừa đúng 15 giây (30 khung/giây, giữ độ nét và tỉ lệ khung hình), làm ngay trên máy, không gửi đi đâu. Video tua nhanh không có tiếng.</div>
 
   <section class="card hide" id="editCard">
     <video id="src" playsinline controls preload="metadata"></video>
@@ -471,7 +470,6 @@ $('file').addEventListener('change', async (e) => {
   file = f; movie = null;
   $('outCard').classList.add('hide');
   $('editCard').classList.remove('hide');
-  $('hint').classList.add('hide');
   $('bar').classList.add('hide');
   if (srcUrl) URL.revokeObjectURL(srcUrl);
   srcUrl = URL.createObjectURL(f);
