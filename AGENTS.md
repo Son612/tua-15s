@@ -2,7 +2,7 @@
 
 Ghi chú của dự án, dùng chung cho **Claude** (qua `CLAUDE.md` → `@AGENTS.md`) và **ChatGPT/Codex**. Quy tắc chung nằm ở kho riêng `Son612/ai-rules`.
 
-**Kho này CÔNG KHAI** (GitHub Pages: https://son612.github.io/cat-video/). Không ghi vào đây (và không đưa vào code) thông tin riêng của gia đình: tên, ngày sinh, địa chỉ Apps Script, mã PIN.
+**Kho này CÔNG KHAI** (GitHub Pages: https://son612.github.io/tua-15s/ — trước 28/10/2026 là /cat-video/, kho tên `cat-video`). Không ghi vào đây (và không đưa vào code) thông tin riêng của gia đình: tên, ngày sinh, địa chỉ Apps Script, mã PIN.
 
 - Ghi chú mới về dự án: ghi vào file này, không ghi vào `CLAUDE.md`.
 - **Đưa lên web = đẩy lên nhánh `main`** (GitHub Pages tự cập nhật sau ~1 phút). Trước khi đẩy: tăng số `CACHE` trong `sw.js` để iPhone/iPad tải bản mới.
